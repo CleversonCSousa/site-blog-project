@@ -10,7 +10,7 @@ export const Header = () => {
       <div className="mx-auto max-w-7xl px-16 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
           <Logo />
-          <nav className="flex items-center gap-6">
+          <nav className="text-heading-xl flex items-center gap-6">
             <ActiveLink href="/">Inicio</ActiveLink>
             <ActiveLink href="/blog">Blog</ActiveLink>
             <Button variant="secondary">

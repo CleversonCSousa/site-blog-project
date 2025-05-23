@@ -1,3 +1,5 @@
+'use client';
+
 import { cn } from '@/lib/utils';
 import Link, { LinkProps } from 'next/link';
 import { usePathname } from 'next/navigation';
@@ -15,11 +17,11 @@ export const ActiveLink = ({ children, href, ...rest }: ActiveLinkProps) => {
       {...rest}
       href={href}
       className={cn(
-        'text-sm font-medium transition-colors hover:text-blue-500',
-        isActive ? 'text-blue-500' : 'text-muted-foreground'
+        'transition-colors hover:text-blue-500',
+        isActive ? 'text-blue-200' : 'text-gray-100'
       )}
     >
-      {children}
+      <span className="text-action-sm block">{children}</span>
     </Link>
   );
 };
