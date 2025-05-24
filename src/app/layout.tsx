@@ -18,7 +18,7 @@ type LayoutProps = {
 export default function RootLayout({ children }: Readonly<LayoutProps>) {
   return (
     <html lang="en">
-      <body className={`dark ${inter.className} antialiased`}>
+      <body className={`${inter.className}`}>
         <div className="relative flex min-h-screen flex-col">
           <Header />
           <main className="mt-10 mb-12 flex flex-1 flex-col">{children}</main>
