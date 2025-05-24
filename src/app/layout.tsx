@@ -21,7 +21,7 @@ export default function RootLayout({ children }: Readonly<LayoutProps>) {
       <body className={`dark ${inter.className} antialiased`}>
         <div className="relative flex min-h-screen flex-col">
           <Header />
-          <main className="mb-12 flex flex-1 flex-col">{children}</main>
+          <main className="mt-10 mb-12 flex flex-1 flex-col">{children}</main>
           <Footer />
         </div>
       </body>
