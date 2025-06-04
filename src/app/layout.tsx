@@ -21,7 +21,7 @@ export default function RootLayout({ children }: Readonly<LayoutProps>) {
       <body className={`${inter.className}`}>
         <div className="relative flex min-h-screen flex-col">
           <Header />
-          <main className="mt-10 mb-12 flex flex-1 flex-col">{children}</main>
+          <main className="mb-12 mt-10 flex flex-1 flex-col">{children}</main>
           <Footer />
         </div>
       </body>
